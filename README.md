@@ -1,3 +1,3 @@
 # HTML GB
 
-https://vatokato.github.io/GB-html/dist/
+демо: https://vatokato.github.io/GB-html/dist/
