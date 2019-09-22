@@ -13,6 +13,7 @@ html,body {
 }
 button,
 .button {
+  display: inline-block;
   height: 48px;
   border-radius: 22.5px;
   box-shadow: 0 2px 5px 0.2px rgba(33, 33, 33, 0.35);
