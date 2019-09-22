@@ -1,0 +1,106 @@
+.footer {
+  background: #f7f7f7;
+}
+
+.footer .container {
+  padding: 120px 90px 0;
+}
+
+.footer-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-main-info section.contacts {
+  width: 17%;
+}
+.footer-main-info section.navi {
+  margin: 0 7%;
+  width: 34%;
+}
+.footer-main-info section.form {
+  width: 34%;
+}
+
+.footer-main-info section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 1.8px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-main-info section .text {
+  margin: 24px 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #212121;
+}
+
+.footer-main-info section ul {
+  list-style: none;
+  column-count: 2;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.footer-main-info section ul a {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.86;
+  letter-spacing: 0.7px;
+  color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-main-info section ul a:hover {
+  text-decoration: underline;
+}
+.footer-main-info section form {
+  position: relative;
+}
+.footer-main-info section form input{
+  width: 100%;
+  border: solid 1px #d9dee1;
+  background-color: #ffffff;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #6c6c6c;
+  padding: 0 40px 0 20px;
+}
+.footer-main-info section form button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  line-height: 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-sub-info {
+  padding: 60px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.17;
+  letter-spacing: 0.6px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+}
+
+.footer-sub-info .policy {
+  text-align: right;
+}

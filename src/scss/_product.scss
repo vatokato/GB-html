@@ -1,0 +1,243 @@
+/* Pair PROD LIST */
+.pair-products {
+  display: flex;
+}
+.pair-products .product-large {
+  width: 50%;
+}
+
+
+
+
+/*     LIST TABS     */
+.tab-nav {
+  font-size: 36px;
+  font-weight: bold;
+}
+.tab-nav a {
+  color: $text-color-secondary;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $text-color-secondary;
+  transition: color .3s, border-color .3s;
+}
+.tab-nav a.active {
+  padding-bottom: 15px;
+  color: $text-color-primary;
+  border-bottom: 3px solid $text-color-primary;
+}
+
+
+/*  PRODUCTS LIST    */
+.products-list-section {
+  padding: 0 90px;
+}
+
+.product-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.product-list-header .title {
+  font-size: 36px;
+  font-weight: bold;
+  color: $text-color-primary;
+  text-decoration: none;
+}
+
+.product-list-container {
+
+}
+
+.product-list {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.product-list.active {
+  display: flex;
+}
+
+/* PRODUCTS GRID */
+.product-list.pseudo-grid {
+  display: flex;
+  justify-content: space-between;
+
+  &>div {
+    width: 49%;
+  }
+  .product-list-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>.product {
+      width: 48%;
+    }
+  }
+  .product {
+    margin: 0 0 30px;
+
+    .product-img-container img {
+      width: 100%;
+    }
+  }
+
+  .product-large {
+    &,
+    img {
+      width: 100%;
+      height: 570px;
+    }
+    .product-large-info {
+      top: 180px;
+      left: 30px;
+    }
+  }
+}
+
+/* PRODUCT */
+.product {
+  display: block;
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin:15px;
+}
+
+.product-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.product-img-container img {
+  object-fit: cover;
+  width: 270px;
+  height: 270px;
+}
+.product-descr-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity .3s;
+  background: rgba(255,255,255,.9);
+  text-align: center;
+  color: $text-color-primary;
+  padding: 32px;
+}
+.product-descr-container .descr {
+  color: $text-color-secondary;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  text-align: center;
+  max-height: 80px;
+}
+.product:hover .product-descr-container {
+  opacity: 1;
+}
+
+
+/* PRODUCT MEDIUM */
+.product-medium {
+  display: block;
+  position: relative;
+  width: 370px;
+  height: 370px;
+  margin:15px;
+}
+
+.product-medium-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.product-medium-img-container img {
+  object-fit: cover;
+  width: 370px;
+  height: 370px;
+}
+
+
+
+/*  PRODUCT  LARGE  */
+.product-large {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 683px;
+}
+.product-large-info {
+  position: absolute;
+  top:220px;
+  left: 50px;
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+.product-large-info .title {
+  font-size: 36px;
+  font-weight: 600;
+  margin:14px 0 18px 0;
+  line-height: 1;
+}
+.product-large-info .desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: left;
+  color: #6c6c6c;
+  margin: 18px 0;
+}
+
+
+/*  PRODUCT  BANNER  */
+.product-banner {
+  background-size: cover;
+  position: relative;
+  height: 516px;
+}
+.product-banner-info {
+  position: absolute;
+  top:120px;
+  left:90px;
+  max-width: 500px;
+}
+
+.product-banner-info .title {
+  font-size: 62px;
+  font-weight: 100;
+  margin:14px 0 16px 0;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+.product-banner-info .desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.09;
+  text-align: left;
+  color: #6c6c6c;
+  margin: 16px 0 30px;
+}
+.product-banner-info .links {
+  margin: 16px 0;
+}
+.product-banner-info .links a{
+  display: inline-block;
+  margin-right: 10px;
+}

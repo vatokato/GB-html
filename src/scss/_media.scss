@@ -1,0 +1,153 @@
+@media screen and (max-width: 1366px) {
+  .product-list {
+    justify-content: center;
+  }
+
+  .products-list-section {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .header .container .nav-container {
+    margin-top: 20px;
+  }
+
+  .products-list-section {
+    padding: 0 20px;
+  }
+
+  .pair-products {
+    flex-direction: column;
+  }
+  .pair-products .product-large {
+    width: 100%;
+  }
+
+
+  .product-list.pseudo-grid {
+    &>div {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+  .footer-sub-info {
+    flex-direction: column;
+  }
+  .footer-sub-info > * {
+    text-align: center !important;
+    margin: 10px 0;
+  }
+
+  .footer-main-info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-main-info section.navi ul {
+    column-count: 1;
+  }
+  .footer-main-info section.navi {
+    order: -1;
+    width: 100%;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  .footer-main-info section.contacts,
+  .footer-main-info section.form {
+    width: 45%;
+  }
+  .footer .container {
+    padding: 90px 30px 0;
+  }
+}
+
+@media screen and (max-width: 660px){
+  .block {
+    margin: 90px 0;
+  }
+  .nav-container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slide .product-large-info .title {
+    font-size: 30px;
+  }
+  .slide .product-large-info,
+  .product-large-info {
+    left: 30px;
+    right: 30px;
+    width: auto;
+  }
+
+  .product-list-header .title {
+    text-align: center;
+  }
+  .product-list-header .more {
+    margin-top: 20px;
+  }
+  .product-list-header {
+    flex-direction: column;
+  }
+
+  .product-medium img,
+  .product-medium {
+    width: 270px;
+    height: 270px;
+  }
+  .product-list {
+    margin: 0;
+  }
+
+
+  .product-list.pseudo-grid {
+    .product-list-right {
+      &>.product {
+        width: 100%;
+      }
+    }
+  }
+
+  .product-banner .product-banner-info .title {
+    font-size: 30px;
+  }
+  .product-banner .product-banner-info {
+    left: 30px;
+    padding-right: 20px;
+  }
+
+  .footer-main-info section.contacts,
+  .footer-main-info section.form {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px){
+
+  .product-list .product-medium,
+  .product-list .product {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .block {
+    margin: 60px 0;
+  }
+  .tab-nav {
+    font-size: 26px;
+  }
+  .products-list-section {
+    padding: 0 10px;
+  }
+
+
+}

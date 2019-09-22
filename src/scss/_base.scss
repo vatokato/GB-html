@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,500,700&display=swap&subset=cyrillic');
+
+$text-color-primary: #212121;
+$text-color-secondary: #6c6c6c;
+
+* {
+  box-sizing: border-box;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+button,
+.button {
+  height: 48px;
+  border-radius: 22.5px;
+  box-shadow: 0 2px 5px 0.2px rgba(33, 33, 33, 0.35);
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  padding: 0 30px;
+  line-height: 48px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: $text-color-primary;
+  text-transform: uppercase;
+  transition: background-color .3s;
+}
+
+button.-round,
+.button.-round {
+  width: 48px;
+  padding: 0;
+}
+button.-round .arrow,
+.button.-round .arrow {
+  left: -2px;
+  top: 1px;
+}
+
+button:hover,
+.button:hover {
+  background-color: #f3f3f3;
+}
+
+.arrow {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid $text-color-primary;
+  border-right: 3px solid $text-color-primary;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+.arrow.-sm {
+  width: 9px;
+  height: 9px;
+  border-width: 2px;
+  top: -2px;
+}
+
+.container {
+  max-width: 1366px;
+  min-width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.block {
+  margin: 120px 0;
+}
+.block.banner {
+  margin-bottom: 0;
+}
+
+.more {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color:  $text-color-primary;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.bage {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: $text-color-secondary;
+
+  &.-green {
+    color: #43a047;
+  }
+  &.-blue {
+    color: #1e88e5;
+  }
+  &.-red {
+    color: #e53935;
+  }
+}
