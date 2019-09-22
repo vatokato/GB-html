@@ -1,3 +1,3 @@
 # HTML GB
 
-https://vatokato.github.io/GB-html/build/
+https://vatokato.github.io/GB-html/dist/
