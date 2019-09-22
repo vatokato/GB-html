@@ -2,7 +2,6 @@
   "name": "lesson8-site3",
   "version": "1.0.0",
   "description": "",
-  "homepage" : "./",
   "main": "index.js",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
